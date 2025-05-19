@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.body{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+
+.title-pag{
+  background-color: black;
+  color: rgb(9, 191, 237);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.listSection{
+  color: white;
+ 
+}
+
+.form-filter{
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.search-text{
+  font-size: 1rem;
+  padding: 5px 15px;
+  border: solid  rgb(9, 191, 237);
+  color: white;
+  background-color: black;
+  width: 400px;
+}
+
+.filterbtn{
+  font-size: 1rem;
+  padding: 5px 15px;
+  background-color: rgb(9, 191, 237);
+  color: white;
+  border-radius: 10px;
+}
+
+.filterbtn:hover{
+  background-color: rgb(138, 9, 237)
+} 
+
+.resetbtn {
+  font-size: 1rem;
+  padding: 5px 15px;
+  background-color: rgb(9, 191, 237);
+  color: white;
+  border-radius: 10px;
+}
+
+.resetbtn:hover{
+  background-color: rgb(138, 9, 237)
+} 
+
+.title-list{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+
+}
+
+.anime__list li{
+  list-style: none;
+  
+}
+
+.anime-item{
+  width: 600px;
+  height: auto;
+  border: solid rgb(135, 7, 255);
+  text-decoration: none;
+  background-color: rgb(174, 222, 255);
+  color: black;
+}

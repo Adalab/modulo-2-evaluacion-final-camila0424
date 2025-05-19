@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Buscador de series de Anime</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <link rel="icon" href="./images/favicon.png" />
+  </head>
+
+  <body class="body">
+    <header>
+      <h1 class="title-pag">Buscador de series de Anime</h1>
+    </header>
+
+    <main>
+      <form class="form-filter">
+        <!-- <label for="search-name"></label> -->
+        <input
+          class="search-text js_filterByNameInput"
+          placeholder="Buscar por nombre"
+          type="text"
+        />
+        <input
+          class="filterbtn js_filterButton"
+          type="submit"
+          value="Filtrar"
+        />
+        <input class="resetbtn js_resetButton" type="reset" value="Reset" />
+      </form>
+
+      <section class="listSection">
+        <h2 class="title-list">Listado de todas las series</h2>
+        <ul id="animeUl" class="js_animeUl anime__list">
+          <li class="anime-item js_anime__item">
+            <h2>Name</h2>
+            <h4>Title</h4>
+            <img src="" alt="Image" />
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
