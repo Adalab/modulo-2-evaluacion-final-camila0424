@@ -31,7 +31,7 @@
 }
 
 .search-text{
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 5px 15px;
   border: solid  rgb(9, 191, 237);
   color: white;
@@ -40,7 +40,7 @@
 }
 
 .filterbtn{
-  font-size: 1rem;
+  font-size:1.5rem;
   padding: 5px 15px;
   background-color: rgb(9, 191, 237);
   color: white;
@@ -52,7 +52,7 @@
 } 
 
 .resetbtn {
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 5px 15px;
   background-color: rgb(9, 191, 237);
   color: white;
@@ -64,10 +64,9 @@
 } 
 
 .title-list{
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   margin-bottom: 2rem;
-
 }
 
 .anime__list li{
@@ -75,11 +74,52 @@
   
 }
 
+.anime__list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
 .anime-item{
-  width: 600px;
+  width: 400px;
   height: auto;
   border: solid rgb(135, 7, 255);
   text-decoration: none;
-  background-color: rgb(174, 222, 255);
-  color: black;
+  background-color: rgb(203, 234, 255);
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
+
+.name{
+  color: black;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.anime-item img{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.selectbtn {
+  font-size: 1.2rem;
+  padding: 5px 8px;
+  background-color: rgb(9, 191, 237);
+  color: black;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.selectbtn:hover{
+  background-color: rgb(138, 9, 237);
+  color: white;
+} 
