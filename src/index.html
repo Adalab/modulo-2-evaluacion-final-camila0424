@@ -19,7 +19,6 @@
 
     <main>
       <form class="form-filter">
-        <!-- <label for="search-name"></label> -->
         <input
           class="search-text js_filterByNameInput"
           placeholder="Buscar por nombre"
@@ -32,20 +31,16 @@
         />
         <input class="resetbtn js_resetButton" type="reset" value="Reset" />
       </form>
+      <section class="see-columns">
+        <section class="listSection">
+          <h2 class="title-list">Listado de todas las series</h2>
+          <ul id="animeUl" class="js_animeUl anime__list"></ul>
+        </section>
 
-      <section class="listSection">
-        <h2 class="title-list">Listado de todas las series</h2>
-        <ul id="animeUl" class="js_animeUl anime__list"></ul>
-        <input
-          class="selectbtn js_selectButton"
-          type="submit"
-          value="Agregar a favoritos"
-        />
-      </section>
-
-      <section class="favouriteSection">
-        <h2 class="title-list">Mis series favoritas</h2>
-        <ul class="js_favouritesUl anime__list"></ul>
+        <section class="favouriteSection">
+          <h2 class="title-list-favorite">Mis series favoritas</h2>
+          <ul class="js_favouritesUl anime__list"></ul>
+        </section>
       </section>
     </main>
 

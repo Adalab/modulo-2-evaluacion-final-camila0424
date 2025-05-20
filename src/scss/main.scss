@@ -22,6 +22,7 @@
 
 .listSection{
   color: white;
+  flex: 1;
  
 }
 
@@ -43,25 +44,32 @@
   font-size:1.5rem;
   padding: 5px 15px;
   background-color: rgb(9, 191, 237);
-  color: white;
+  color: black;
   border-radius: 10px;
 }
 
 .filterbtn:hover{
-  background-color: rgb(138, 9, 237)
+  background-color: rgb(138, 9, 237);
+  color: white;
 } 
 
 .resetbtn {
   font-size: 1.5rem;
   padding: 5px 15px;
   background-color: rgb(9, 191, 237);
-  color: white;
+  color: black;
   border-radius: 10px;
 }
 
 .resetbtn:hover{
-  background-color: rgb(138, 9, 237)
+  background-color: rgb(138, 9, 237);
+  color: white;
 } 
+
+.see-columns{
+  display: flex;
+  gap: 50px;
+}
 
 .title-list{
   font-size: 2.5rem;
@@ -108,18 +116,15 @@
   margin-left: 50px;
 }
 
-.selectbtn {
-  font-size: 1.2rem;
-  padding: 5px 8px;
-  background-color: rgb(9, 191, 237);
-  color: black;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  margin-left: 40px;
-  margin-right: 40px;
+.favouriteSection{
+  background-color:rgb(9, 191, 237);
+  color: rgb(36, 3, 72);
+  padding: 5px 35px;
+  width: 500px;
 }
 
-.selectbtn:hover{
-  background-color: rgb(138, 9, 237);
-  color: white;
-} 
+.title-list-favorite{
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
