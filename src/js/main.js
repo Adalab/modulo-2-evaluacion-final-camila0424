@@ -42,7 +42,7 @@ function renderAllMovies() {
 }
 
 
-
+//Es como agregar elementos a mi carrito de la compra (en este caso favourites)
 function renderAllFavourites() {
   let html = '';
 
@@ -54,9 +54,9 @@ function renderAllFavourites() {
 }
 
 
-
+// Esta función me sirve para que cuando le doy click a un li (un paeli) esa peli haga algo, para eso uso el if
 function hadleClickMovies(ev){
- 
+    //le ponemos el currentTarget para que me llame al elemento que tiene el Listener en este caso animeItemLi.addEventListener en el renderAll
     const clickedLi = ev.currentTarget;
     clickedLi.classList.toggle('favourite')
    
@@ -69,16 +69,17 @@ function hadleClickMovies(ev){
       // La peli clickada no está en favoritas  
       const clickedMoviesItem = allMovies.find(oneMovie => oneMovie.mal_id === id_gancho);
     
-    
       // Añadir el objeto en el array de favoritas con push cuando 
       favourites.push(clickedMoviesItem);
 
+
+      //el ls me empieza afuncionar desde aquí. desde que empiezo a agregar las pelis a favs
       localStorage.setItem( 'favouriteMovie', JSON.  stringify(favourites) );
 
-    // Generamos otro <li> para esos datos
+      // Generamos otro <li> para esos datos
       const htmlOneMovie = renderOneMovie(clickedMoviesItem)
 
-     // Ponemos el <li> en la sección de favoritos
+      // Ponemos el <li> en la sección de favoritos
       favouritesUl.innerHTML += htmlOneMovie;
     }
     else {
@@ -93,7 +94,7 @@ function handleClickFilterButton(ev) {
   ev.preventDefault();
 
   const title = filterByNameInput.value;
-
+    //este feth nos ayuda a filtrar las pelis del API pero unicamente a través de un parametro, en este caso el title
   fetch(`https://api.jikan.moe/v4/anime?q=${title}`)
     .then(res => res.json())
     .then(data => {
@@ -129,7 +130,7 @@ fetch('https://api.jikan.moe/v4/anime')
     renderAllMovies();
 });
 
-// Obtenemos las favoritos desde el LocalStorage
+// Obtenemos las favoritos desde el LocalStorage línea 76
 const favsFromLS = JSON.parse( localStorage.getItem('favouriteMovie') );
 
 if( favsFromLS !== null ) {
