@@ -10,7 +10,7 @@
     />
     
     <link rel="icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./assets/index-14a6f1e4.css">
+    <link rel="stylesheet" href="./assets/index-bedc2066.css">
   </head>
 
   <body class="body">
@@ -19,7 +19,7 @@
     </header>
 
     <main>
-      <form class="form-filter">
+      <form id="formSection" class="form-filter">
         <input
           class="search-text js_filterByNameInput"
           placeholder="Buscar por nombre"
@@ -32,6 +32,7 @@
         />
         <input class="resetbtn js_resetButton" type="reset" value="Reset" />
       </form>
+
       <section class="see-columns">
         <section class="listSection">
           <h2 class="title-list">Listado de todas las series</h2>
@@ -43,6 +44,13 @@
           <ul class="js_favouritesUl anime__list"></ul>
         </section>
       </section>
+
+      <a class="icon-scroll-favs" href="#formSection"
+        ><img
+          src="./assets/scroll-up-3028a964.png"
+          alt="Ir a sección de favoritos"
+        />
+      </a>
     </main>
 
     <script src="./js/main.js"></script>
