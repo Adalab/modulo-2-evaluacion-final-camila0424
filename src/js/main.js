@@ -51,11 +51,13 @@ function renderAllFavourites() {
   }
 
   favouritesUl.innerHTML = html;
-}
+  }
 
 
 // Esta función me sirve para que cuando le doy click a un li (un paeli) esa peli haga algo, para eso uso el if
 function hadleClickMovies(ev){
+
+
     //le ponemos el currentTarget para que me llame al elemento que tiene el Listener en este caso animeItemLi.addEventListener en el renderAll
     const clickedLi = ev.currentTarget;
     clickedLi.classList.toggle('favourite')
@@ -69,7 +71,7 @@ function hadleClickMovies(ev){
       // La peli clickada no está en favoritas  
       const clickedMoviesItem = allMovies.find(oneMovie => oneMovie.mal_id === id_gancho);
     
-      // Añadir el objeto en el array de favoritas con push cuando 
+      // Añadir el objeto en el array de favoritas con push 
       favourites.push(clickedMoviesItem);
 
 
@@ -83,7 +85,13 @@ function hadleClickMovies(ev){
       favouritesUl.innerHTML += htmlOneMovie;
     }
     else {
-    // La peli clickada SÍ está en favs no hacer nada
+      // si la peli clickada SÍ está en favs 
+      //Se utiliza el método de array splice para eliminar un elemento de la lista de favs (position,1(no poner nada))
+
+      favourites.splice( moviePositionFromFavs, 1 );
+
+      //luego se vulve a llamar a la función render de la linea 46
+      renderAllFavourites();
      }
 }
 

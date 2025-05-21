@@ -16,8 +16,25 @@
 .title-pag{
   background-color: black;
   color: rgb(9, 191, 237);
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
+  margin-top: 10%;
+  animation: entradaSuave 1.8s ease forwards;
+}
+
+@keyframes entradaSuave { //regla usada para animaciones de nombre aleatorio
+  0% {
+    transform: scale(1.5); /* Empieza más grande */
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.9); /* Se reduce un poquito más de su tamaño normal */
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1); /* Queda en su tamaño normal */
+    opacity: 1;
+  }
 }
 
 .listSection{
@@ -27,12 +44,12 @@
 }
 
 .form-filter{
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 4rem;
 }
 
 .search-text{
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 5px 15px;
   border: solid  rgb(9, 191, 237);
   color: white;
@@ -41,7 +58,7 @@
 }
 
 .filterbtn{
-  font-size:1.5rem;
+  font-size:1rem;
   padding: 5px 15px;
   background-color: rgb(9, 191, 237);
   color: black;
@@ -54,7 +71,7 @@
 } 
 
 .resetbtn {
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 5px 15px;
   background-color: rgb(9, 191, 237);
   color: black;
@@ -72,7 +89,7 @@
 }
 
 .title-list{
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -91,9 +108,9 @@
 
 
 .anime-item{
-  width: 400px;
+  width: 300px;
   height: auto;
-  border: solid rgb(135, 7, 255);
+  border: solid rgb(135, 7, 255) 5px;
   text-decoration: none;
   background-color: rgb(203, 234, 255);
   margin-bottom: 10px;
@@ -103,7 +120,7 @@
 
 .name{
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 10px;
   margin-top: 15px;
   margin-left: 40px;
@@ -117,14 +134,36 @@
 }
 
 .favouriteSection{
-  background-color:rgb(9, 191, 237);
+  background-color:rgb(112, 226, 255);
   color: rgb(36, 3, 72);
   padding: 5px 35px;
-  width: 500px;
+  width: 320px;
 }
 
 .title-list-favorite{
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   text-align: center;
   margin-bottom: 1.5rem;
+}
+
+.icon-scroll-favs {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  padding: 2px;
+  border-radius: 50%;
+  z-index: 1000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-scroll-favs:hover{
+  background-color: white;
+}
+
+.icon-scroll-favs img {
+  width: 40px;
+  height: 40px;
 }
